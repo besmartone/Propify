@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    tools:context=".ownerView">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/id_admin_anim_lottie"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/propertyanimation" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/id_admin_anim_moreani"
+        android:layout_width="240dp"
+        android:layout_height="192dp"
+        android:layout_below="@id/id_admin_anim_lottie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-38dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/moreani" />
+
+    <Button
+        android:id="@+id/addhousebtn"
+        android:layout_width="265dp"
+        android:layout_height="68dp"
+        android:layout_below="@id/id_admin_anim_moreani"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_style"
+        android:text="@string/add_rental_space_here"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>
